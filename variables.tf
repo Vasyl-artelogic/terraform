@@ -1,23 +1,13 @@
-variable "sg_ports" {
-  type        = map(string)
-  description = "list of ingress ports"
+variable "environment" {
+    description = "Choose your environment: dev, test, prod or create your own"
+    type = string
 }
 
 
-variable "OIsniuk_ip" {
-  type        = string
-  description = "OIsniuk's ip address"
+variable "db_user" {
+    type = string
 }
 
-
-variable "office_ip" {
-  type        = string
-  description = "office ip address"
+variable "db_pass" {
+    type = string
 }
-
-
-variable "my_home_ip" {
-  type        = string
-  description = "my home ip address"
-}
-
